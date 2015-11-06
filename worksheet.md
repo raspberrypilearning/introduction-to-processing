@@ -15,4 +15,4 @@ Processing is all about learning to use code to draw on screen. The language is 
 
 Learn how to use Processing for physical computing.
 
-Processing for Raspberry Pi has been enhanced to use the Pi's GPIO pins. If you're interested in adding some phyical interactivity to your project, then move onto [the next tutorial here](worksheet-2.md)
+Processing for Raspberry Pi has been enhanced to use the Pi's GPIO pins. If you're interested in adding some physical interactivity to your project, then move onto [the next tutorial here](worksheet-2.md)
