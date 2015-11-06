@@ -1,6 +1,6 @@
 # Introduction to Processing
 
-Processingh is an open-source development environment and programming language, designed for learning how to code. While it's very flexible and powerful, it's mainly used in the realm of visual arts. This guide will help you get started with it.
+Processing is an open-source development environment and programming language, designed for learning how to code. While it's very flexible and powerful, it's mainly used in the realm of visual arts. This guide will help you get started with it.
 
 ![](cover.png)
 
