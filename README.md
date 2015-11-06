@@ -10,7 +10,13 @@ As well as a Raspberry Pi with an SD card loaded with Raspbian, you'll also need
 
 ### Hardware
 
-- 1 x Speaker or headphones with a 3.5mm jack
+The following hardware is required to work through [the second worksheet](worksheet-2.md).
+
+- 1 x Solderless breadboard
+- 1 x Tactile button
+- 1 x LED
+- 1 x 330 ohm resistor 
+- 4 x Male-to-female jumper leads
 
 ## Worksheet
 
@@ -21,7 +27,7 @@ You will need the following worksheet to get started:
 
 ## Learn more
 
-This worksheet is just a starting point. To learn more browse the [selection of tutorials on Processing.org](https://processing.org/tutorials/).
+These worksheets are just a starting point. To learn more browse the [selection of tutorials on Processing.org](https://processing.org/tutorials/).
 
 ## Licence
 
