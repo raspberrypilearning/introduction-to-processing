@@ -1,3 +1,10 @@
-- name: Headphones or a speaker
-  img: headphones-speaker
-  url: http://thepihut.com/products/mini-portable-speaker-for-the-raspberry-pi
+- name: 1 x Solderless breadboard
+  img: breadboard
+- name: 1 x Tactile button
+  img: tactile-push-button
+- name: 1 x LED
+  img: led
+- name: 1 x 330 ohm resistor 
+  img: resistor-330r
+- name: 4 x Male-to-female jumper leads
+  img: jumper-male-to-female
