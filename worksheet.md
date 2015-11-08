@@ -100,6 +100,8 @@ There are a lot of ways for us to describe colors to a computer. With processing
 	ellipse(50, 50, 75, 75)
 	```
 
+	![](images/red-circle.png)
+
 	After you call the `fill` function, any shapes drawn after that function will have that color fill (until you call the `fill` function again with a different color). The syntax for `fill` is:
 
 	```java
@@ -116,6 +118,8 @@ There are a lot of ways for us to describe colors to a computer. With processing
 	```
 
 	Try changing the stroke of the circle.
+
+	![](images/stroke.png)
 
 1. And if you want to get rid of the stroke or fill, use the [noStroke](https://processing.org/reference/noStroke_.html) and [noFill](https://processing.org/reference/noFill_.html) functions. Keep in mind, if you use them both at the same time, you won't be able to see what you're drawing! Try them out on the circle above.
 
@@ -180,6 +184,8 @@ void draw() {
 	The line `int i = 0` sets up a **variable**, which is a spot in memory to hold an **integer**, which is a whole number. It calls that spot in memory `i` and sets its value to 0. Later in the Sketch, your code will read that value and even update it.
 
 	When Processing draws the ellipse in the line `ellipse(250, i, 30, 30);`, it uses the current value of `i` as the y coordinate for the circle.
+
+	![](images/moving-circle.png)
 
 1. Further down, the line `i = i + 1` sets a new value for `i`, incrementing it by 1. Try changing that line to `i = i + 2`. What do you think will happen when you run the sketch? Try `i = i + 5`.
 
