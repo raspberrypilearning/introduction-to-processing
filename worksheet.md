@@ -206,6 +206,7 @@ There are many ways to have a Processing sketch listen to inputs and make your s
 	}
 	```
 
+1. Click anywhere in the window to see the circle move to that position.
 
 
 ## What next?
