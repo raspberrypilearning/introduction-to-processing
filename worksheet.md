@@ -133,7 +133,7 @@ void draw() {
 }
 ```
 
-1. Enter the following code into a new Processing sketch and run your sketch. The text after the double slashes are comments to help you understand what each line is doing. They'll be ignored by Processing.
+1. Enter the following code into a new Processing sketch and run it. The text after the double slashes are comments to help you understand what each line is doing. They'll be ignored by Processing.
 
 	```java
 	// Create an integer variable called i and store the value 0 in it:
@@ -156,7 +156,7 @@ void draw() {
 
 	  // Update the variable i:
 	  if (i < height) { // if it's less than the height of the window:
-	    i++; // then add 1 to its value
+	    i = i + 1; // then add 1 to its value
 	  }
 	  else { // otherwise (if it's greater than or equal to the height of the window): 
 	   i = 0; // Set it back to zero.
@@ -165,6 +165,18 @@ void draw() {
 	```
 
 	You should see a circle moving downward. When it gets to the bottom, it goes back up to the top again. It will look like this forever.
+
+	There are a few new concepts in this sketch. Let's take a closer look now at what's going on.
+
+	The line `int i = 0` sets up a **variable**, which is a spot in memory to hold an **integer**, which is a whole number. It calls that spot in memory `i` and sets its value to 0. Later in the Sketch, your code will read that value and even update it.
+
+	When Processing draws the ellipse in the line `ellipse(250, i, 30, 30);`, it uses the current value of `i` as the y coordinate for the circle.
+
+1. Further down, the line `i = i + 1` sets a new value for `i`, incrementing it by 1. Try changing that line to `i = i + 2`. What do you think will happen when you run the sketch? Try `i = i + 5`.
+
+1. The line that changes the value of `i` is wrapped up in an **if/else statement**. It checks to see if the value of `i` is greater than the height. If it is, it sets the value back to zero. This ensures that the circle goes back to the top of the window after it has moved to the bottom. Try adjusting if/else statement and the line that updates the value of `i` to make the ball move upward repeatedly.
+
+1. 
 
 
 ## What next?
