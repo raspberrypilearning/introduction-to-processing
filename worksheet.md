@@ -10,7 +10,7 @@ The download and installation process might be a litte different than you're use
 
 		curl http://sukzessiv.net/~gohai/p5-arm/install-arm.sh | sudo sh
 
-1. When the installation is complete, enter the following the command to start the Processing IDE:
+1. When the installation is complete, enter the following the command to start the Processing development environment:
 
 		processing
 
@@ -25,6 +25,12 @@ The main Processing window is where you'll type code. The Run button is how you'
 	```
 
 1. Click on the Run button. A new window should appear with a box and a diagonal line.
+
+The line function draws a line between two points in the window. It takes four inputs: `x1`, and `y1` for the start of the line and `x2`, and `y2` for the end of the line.
+
+To understand what this means, you'll need to know that Processing uses a coordinate system like the one shown below; crucially the numbering begins at 0, not 1. Also, the origin is in the top left rather than the bottom left as you may be used to.
+
+1. Try entering different values into the line function and press play. Here are a few ideas to try. Can you guess what the output will look like _before_ you execute the code?
 
 ## What next?
 
