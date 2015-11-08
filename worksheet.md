@@ -121,7 +121,7 @@ There are a lot of ways for us to describe colors to a computer. With processing
 ## Make things move
 Up until now, you've been writing sketches that draw a single thing and then they're done. But Processing is a powerful language that lets you create animations and respond to inputs. In this section, you'll create motion and listen to input from the mouse.
 
-In order to create interactivity, you'll need to define two special functions, `setup` and `draw`. The code you write in the `setup` function is only executed once. The code you write in the `draw` function is executed over and over again until you terminate the sketch.
+In order to create interactivity, you'll need to define two special functions, `setup` and `draw`. The code you write in the `setup` function is only executed once. The code you write in the `draw` function is executed over and over again until you terminate the sketch. This is how it will look.
 
 ```java
 void setup() {
@@ -132,6 +132,29 @@ void draw() {
 	// the code here will be executed over and over again.
 }
 ```
+
+1. Enter the following code into a new Processing sketch and run your sketch:
+
+	```java
+	int i = 0;
+
+	void setup() {
+	 size(500,500); 
+	}
+
+	void draw() {
+	  background(0,0,100);
+	  fill(255,0,0);
+	  ellipse(250, i, 30, 30);
+	  if (i < height) {
+	    i++;
+	  }
+	  else {
+	   i = 0; 
+	  }
+	}
+	```
+
 
 ## What next?
 
