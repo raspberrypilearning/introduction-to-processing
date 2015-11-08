@@ -106,8 +106,11 @@ There are a lot of ways for us to describe colors to a computer. With processing
 	stroke(red, green, blue);
 	```
 
-1. And if you want to get rid of the stroke or fill, use the [noStroke](https://processing.org/reference/noStroke_.html) and [noFill](https://processing.org/reference/noFill_.html) functions. Keep in mind, if you use them both at the same time, you won't be able to see what you're drawing!
+	Try changing the stroke of the circle.
 
+1. And if you want to get rid of the stroke or fill, use the [noStroke](https://processing.org/reference/noStroke_.html) and [noFill](https://processing.org/reference/noFill_.html) functions. Keep in mind, if you use them both at the same time, you won't be able to see what you're drawing! Try it out on the circle above.
+
+1. Use what you now know about `fill`, `stroke`, `noFill`, and `noStroke` to draw something like the Olympic rings, a giraffe, or a Raspberry Pi!
 
 ## Make things move
 Up until now, you've been writing sketches that draw a single thing and then they're done. But Processing is a powerful language that lets you create animations and interactivity. In this section, you'll create motion and listen to input from the mouse.
