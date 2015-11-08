@@ -4,9 +4,9 @@ Processing is all about learning to use code to draw on screen. The language is 
 
 ## Download and install Processing
 
-The download and installation process might be a litte different than you're used to, but please keep in mind this the Raspberry Pi implementation of Processing is brand new and it may take time for the process to become more streamlined.
+The download and installation process might be a little different than you're used to, but please keep in mind this the Raspberry Pi implementation of Processing is brand new and it may take time for the process to become more streamlined.
 
-1. Open the termminal window and enter the following command at the prompt to download and install Processing onto your Raspberry Pi:
+1. Open the terminal window and enter the following command at the prompt to download and install Processing onto your Raspberry Pi:
 
 		curl http://sukzessiv.net/~gohai/p5-arm/install-arm.sh | sudo sh
 
@@ -82,7 +82,7 @@ Of course, you can do a lot with lines, but Processing can draw a lot of differe
 ## Add color
 You may have noticed that the ellipse and the rectangle you drew had black outlines and were filled with white. It would be super boring if that was the only option, right? In this section, you'll learn how to change the **stroke** (the outline) and the **fill** (the solid color inside the shape).
 
-There are a lot of ways for us to describe colors to a computer. With processing, you'll ususally use an **RGB value**, which describes colors by stating how much red, green, and blue are in them. You can think of it like mixing paint.
+There are a lot of ways for us to describe colors to a computer. With processing, you'll usually use an **RGB value**, which describes colors by stating how much red, green, and blue are in them. You can think of it like mixing paint.
 
 1. To try it out, run the following code to draw a circle with a red fill:
 
@@ -91,20 +91,38 @@ There are a lot of ways for us to describe colors to a computer. With processing
 	ellipse(50, 50, 75, 75)
 	```
 
+	After you call the `fill` function, any shapes drawn after that function will have that color fill (until you call the `fill` function again with a different color). The syntax for `fill` is:
+
+	```java
+	fill(red, green, blue);
+	```
+	Each color can have the value 0 to 255.
+
+1. Try to change the values of the fill function and re-run your code to try making other colors. Remember, you may need to mix colors together!
+
+1. To change the outline, use the [stroke function](https://processing.org/reference/stroke_.html). It uses the same color parameters as the `fill` function:
+
+	```java
+	stroke(red, green, blue);
+	```
+
+1. And if you want to get rid of the stroke or fill, use the [noStroke](https://processing.org/reference/noStroke_.html) and [noFill](https://processing.org/reference/noFill_.html) functions. Keep in mind, if you use them both at the same time, you won't be able to see what you're drawing!
+
+
 ## Make things move
 Up until now, you've been writing sketches that draw a single thing and then they're done. But Processing is a powerful language that lets you create animations and interactivity. In this section, you'll create motion and listen to input from the mouse.
 
 In order to 
 
-	```java
-	void setup() {
-		// the code here will only be executed once.
-	}
+```java
+void setup() {
+	// the code here will only be executed once.
+}
 
-	void draw() {
-		// the code here will be executed over and over again.
-	}
-	```
+void draw() {
+	// the code here will be executed over and over again.
+}
+```
 
 ## What next?
 
