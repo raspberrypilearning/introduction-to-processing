@@ -38,6 +38,9 @@ The main Processing window is where you'll type your code. The Run button is how
 
 	To understand what this means, you'll need to know that Processing uses a coordinate system like the one shown below; crucially the numbering begins at 0, not 1. Also, the origin is in the top left rather than the bottom left as you may be used to.
 
+	![](images/coordinates.png)
+
+
 1. Try entering different values into the line function and press play. Below are a few ideas to try. Can you guess what the output will look like _before_ you execute the code?
 
 	```java
