@@ -82,7 +82,7 @@ Of course, you can do a lot with lines, but Processing can draw a lot of differe
 ## Add color
 You may have noticed that the ellipse and the rectangle you drew had black outlines and were filled with white. It would be super boring if that was the only option, right? In this section, you'll learn how to change the **stroke** (the outline) and the **fill** (the solid color inside the shape).
 
-There are a lot of ways for us to describe colors to a computer. With processing, you'll usually use an **RGB value**, which describes colors by stating how much red, green, and blue are in them. You can think of it like mixing paint.
+There are a lot of ways for us to describe colors to a computer. With processing, you'll usually use an **RGB value**, which describes colors by stating how much red, green, and blue are in them.
 
 1. To try it out, run the following code to draw a circle with a red fill:
 
@@ -112,12 +112,16 @@ There are a lot of ways for us to describe colors to a computer. With processing
 
 1. Use what you now know about `fill`, `stroke`, `noFill`, and `noStroke` to draw something like the Olympic rings, a giraffe, or a Raspberry Pi!
 
-	_Note: By default, all lines are 1 pixel wide. To increase the thickness of the line, use the [strokeWeight function](https://processing.org/reference/strokeWeight_.html). Like with the color functions, after you call it, all shapes you draw will have your specified thickness until `noStroke` is called or `strokeWeight` is called with a different value._
+	_Note: By default, all lines are 1 pixel wide. To increase the thickness of the line, use the [strokeWeight function](https://processing.org/reference/strokeWeight_.html). Like with the color functions, after you call it, all shapes you draw will have your specified thickness until `noStroke` is called or `strokeWeight` is called with a different value. The syntax is:_
+
+	```java
+	strokeWeight(width);
+	```
 
 ## Make things move
-Up until now, you've been writing sketches that draw a single thing and then they're done. But Processing is a powerful language that lets you create animations and interactivity. In this section, you'll create motion and listen to input from the mouse.
+Up until now, you've been writing sketches that draw a single thing and then they're done. But Processing is a powerful language that lets you create animations and respond to inputs. In this section, you'll create motion and listen to input from the mouse.
 
-In order to 
+In order to create interactivity, you'll need to define two special functions, `setup` and `draw`. The code you write in the `setup` function is only executed once. The code you write in the `draw` function is executed over and over again until you terminate the sketch.
 
 ```java
 void setup() {
