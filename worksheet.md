@@ -112,7 +112,7 @@ There are a lot of ways for us to describe colors to a computer. With processing
 
 1. Use what you now know about `fill`, `stroke`, `noFill`, and `noStroke` to draw something like the Olympic rings, a giraffe, or a Raspberry Pi!
 
-	_Note: By default all lines are 1 pixel wide. To increase the thickness of the line, use the [strokeWeight function](https://processing.org/reference/strokeWeight_.html). Like with the color functions, after you call it, all shapes you draw will have your specified thickness until `strokeWeight` or `noStroke` is called again._
+	_Note: By default, all lines are 1 pixel wide. To increase the thickness of the line, use the [strokeWeight function](https://processing.org/reference/strokeWeight_.html). Like with the color functions, after you call it, all shapes you draw will have your specified thickness until `noStroke` is called or `strokeWeight` is called with a different value._
 
 ## Make things move
 Up until now, you've been writing sketches that draw a single thing and then they're done. But Processing is a powerful language that lets you create animations and interactivity. In this section, you'll create motion and listen to input from the mouse.
