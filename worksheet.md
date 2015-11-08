@@ -79,11 +79,18 @@ Of course, you can do a lot with lines, but Processing can draw a lot of differe
 
 1. Try drawing a box around your stick figure. At this stage, it's important to note that as your code is executed, Processing draws shapes on top of previously-drawn shapes. Therefore, you may want to execute the `rect` function before the code to draw your stick figure.
 
+## Add color
+
+
 
 ## Make things move
 
+
+
 ## What next?
 
-Learn how to use Processing for physical computing.
+These are just the very basics of drawing on screen using code. There are many more functions to try. You can see a listing of them in the [Reference section of Processing.org](https://processing.org/reference/).
+
+We also recommend that you explore the example code that's included with Processing. Click File -> Examples to open the example browser.
 
 Processing for Raspberry Pi has been enhanced to use the Pi's GPIO pins. If you're interested in adding some physical interactivity to your project, then move onto [the next tutorial here](worksheet-2.md)
