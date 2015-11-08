@@ -159,7 +159,7 @@ void draw() {
 	    i = i + 1; // then add 1 to its value
 	  }
 	  else { // otherwise (if it's greater than or equal to the height of the window): 
-	   i = 0; // Set it back to zero.
+	   i = 0; // set it back to zero.
 	  }
 	}
 	```
@@ -190,17 +190,17 @@ There are many ways to have a Processing sketch listen to inputs and make your s
 	void setup() {
 	 size(500,500);
 
-	 // set the value of x to be half the width of the window
+	 // Set the value of x to be half the width of the window
 	 x = width / 2;
 
-	 // set the value of y to be half the height of the window
+	 // Set the value of y to be half the height of the window
 	 y = height / 2;
 	}
 
 	void draw () {
 	 background(0,100,0);
 
-	 // draw the circle in the position taken from the x and y variables:
+	 // Draw the circle in the position taken from the x and y variables:
 	 ellipse(x, y, 50, 50);
 	}
 
@@ -212,8 +212,13 @@ There are many ways to have a Processing sketch listen to inputs and make your s
 	}
 	```
 
-1. Run the sketch and click anywhere in the window to see the circle move to that position.
+	The code above uses a few special variables that all Processing sketches have "built-in": `height`, `width`, `mouseX`, and `mouseY`. The `height` and `width` variables refer to the height and width of the window. The `mouseX` and `mouseY` variables contain the position of the mouse pointer.
 
+	The code also creates a special function called `mousePressed()` that is executed when either mouse button is pressed. 
+
+1. Run the sketch and click anywhere in the window to see the circle move to that position!
+
+1. Try using mouseX and mouseY to change the size or color of a shape.
 
 ## What next?
 
