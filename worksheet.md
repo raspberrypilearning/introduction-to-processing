@@ -178,7 +178,7 @@ void draw() {
 
 1. The line `background(0,0,100)` fills the window with blue. The [background function](https://processing.org/reference/background_.html) takes red, green, and blue parameters just like other functions that deal with color. It's important to call this function at the start of every draw block if you want previously drawn circles cleared from the window. Try running the sketch without the background function to see the effect.
 
-## Listening to the mouse
+## Respond to the mouse
 There are many ways to have a Processing sketch listen to inputs and make your sketch interactive. The mouse is just one way. In this section, you'll learn how to listen for mouse clicks and get the position of the mouse.
 
 1. Create a new sketch with the following code:
@@ -189,24 +189,30 @@ There are many ways to have a Processing sketch listen to inputs and make your s
 
 	void setup() {
 	 size(500,500);
-	 background(0,100,0);
+
+	 // set the value of x to be half the width of the window
 	 x = width / 2;
+
+	 // set the value of y to be half the height of the window
 	 y = height / 2;
-	 ellipse(x, y, 50, 50);
 	}
 
 	void draw () {
 	 background(0,100,0);
+
+	 // draw the circle in the position taken from the x and y variables:
 	 ellipse(x, y, 50, 50);
 	}
 
 	void mousePressed() {
+	  // When the mouse is pressed, update x and y
+	  // to contain the current position of the mouse:
 	  x = mouseX;
 	  y = mouseY;
 	}
 	```
 
-1. Click anywhere in the window to see the circle move to that position.
+1. Run the sketch and click anywhere in the window to see the circle move to that position.
 
 
 ## What next?
