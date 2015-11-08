@@ -100,7 +100,7 @@ There are a lot of ways for us to describe colors to a computer. With processing
 
 1. Try to change the values of the fill function and re-run your code to try making other colors. Remember, you may need to mix colors together!
 
-1. To change the outline, use the [stroke function](https://processing.org/reference/stroke_.html). It uses the same color parameters as the `fill` function:
+1. To change the color of the outline, use the [stroke function](https://processing.org/reference/stroke_.html). It uses the same color parameters as the `fill` function:
 
 	```java
 	stroke(red, green, blue);
@@ -108,9 +108,11 @@ There are a lot of ways for us to describe colors to a computer. With processing
 
 	Try changing the stroke of the circle.
 
-1. And if you want to get rid of the stroke or fill, use the [noStroke](https://processing.org/reference/noStroke_.html) and [noFill](https://processing.org/reference/noFill_.html) functions. Keep in mind, if you use them both at the same time, you won't be able to see what you're drawing! Try it out on the circle above.
+1. And if you want to get rid of the stroke or fill, use the [noStroke](https://processing.org/reference/noStroke_.html) and [noFill](https://processing.org/reference/noFill_.html) functions. Keep in mind, if you use them both at the same time, you won't be able to see what you're drawing! Try them out on the circle above.
 
 1. Use what you now know about `fill`, `stroke`, `noFill`, and `noStroke` to draw something like the Olympic rings, a giraffe, or a Raspberry Pi!
+
+	_Note: By default all lines are 1 pixel wide. To increase the thickness of the line, use the [strokeWeight function](https://processing.org/reference/strokeWeight_.html). Like with the color functions, after you call it, all shapes you draw will have your specified thickness until `strokeWeight` or `noStroke` is called again._
 
 ## Make things move
 Up until now, you've been writing sketches that draw a single thing and then they're done. But Processing is a powerful language that lets you create animations and interactivity. In this section, you'll create motion and listen to input from the mouse.
