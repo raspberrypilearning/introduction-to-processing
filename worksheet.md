@@ -233,6 +233,8 @@ There are many ways to have a Processing sketch listen to inputs and make your s
 
 1. Run the sketch and click anywhere in the window to see the circle move to that position!
 
+	![](images/mouse.png)
+
 1. Try updating the code to use `mouseX`, `mouseY`, and `mousePressed` to change the size or color of a shape.
 
 ## What next?
