@@ -78,6 +78,8 @@ Of course, you can do a lot with lines, but Processing can draw a lot of differe
 	line(50, 30, 50, 70);
 	```
 
+	![](images/coordinates.png)
+
 1. Even though you can draw a rectangle using just four lines, there's a [rectangle function](https://processing.org/reference/rect_.html) to make it easer. Its syntax is:
 
 	```java
