@@ -119,9 +119,9 @@ There are a lot of ways for us to describe colors to a computer. With processing
 	```
 
 ## Make things move
-Up until now, you've been writing sketches that draw a single thing and then they're done. But Processing is a powerful language that lets you create animations and respond to inputs. In this section, you'll create motion and listen to input from the mouse.
+Up until now, you've been writing sketches that draw a single thing and then they're done. But Processing is a powerful language that lets you create animations and respond to inputs. In this section, you'll learn how to get things to move on screen.
 
-In order to create interactivity, you'll need to define two special functions, `setup` and `draw`. The code you write in the `setup` function is only executed once. The code you write in the `draw` function is executed over and over again until you terminate the sketch. This is how it will look.
+In order to create movement, you'll need to define two special functions, `setup` and `draw`. The code you write in the `setup` function is only executed once when your sketch starts. The code you write in the `draw` function is executed over and over again until you terminate the sketch. This is the basic structure:
 
 ```java
 void setup() {
@@ -176,7 +176,36 @@ void draw() {
 
 1. The line that changes the value of `i` is wrapped up in an **if/else statement**. It checks to see if the value of `i` is greater than the height. If it is, it sets the value back to zero. This ensures that the circle goes back to the top of the window after it has moved to the bottom. Try adjusting if/else statement and the line that updates the value of `i` to make the ball move upward repeatedly.
 
-1. 
+1. The line `background(0,0,100)` fills the window with blue. The [background function](https://processing.org/reference/background_.html) takes red, green, and blue parameters just like other functions that deal with color. It's important to call this function at the start of every draw block if you want previously drawn circles cleared from the window. Try running the sketch without the background function to see the effect.
+
+## Listening to the mouse
+There are many ways to have a Processing sketch listen to inputs and make your sketch interactive. The mouse is just one way. In this section, you'll learn how to listen for mouse clicks and get the position of the mouse.
+
+1. Create a new sketch with the following code:
+
+	```java
+	int x = 0;
+	int y = 0;
+
+	void setup() {
+	 size(500,500);
+	 background(0,100,0);
+	 x = width / 2;
+	 y = height / 2;
+	 ellipse(x, y, 50, 50);
+	}
+
+	void draw () {
+	 background(0,100,0);
+	 ellipse(x, y, 50, 50);
+	}
+
+	void mousePressed() {
+	  x = mouseX;
+	  y = mouseY;
+	}
+	```
+
 
 
 ## What next?
