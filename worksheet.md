@@ -21,7 +21,7 @@ The main Processing window is where you'll type your code. The Run button is how
 1. Enter the following code in the window:
 
 	```java
-	line(0,0,100,100);
+	line(0, 0, 100, 100);
 	```
 
 1. Click on the Run button. A new window should appear with a box and a diagonal line.
@@ -37,9 +37,9 @@ The main Processing window is where you'll type your code. The Run button is how
 1. Try entering different values into the line function and press play. Below are a few ideas to try. Can you guess what the output will look like _before_ you execute the code?
 
 	```java
-	line(0,50,100,50);
-	line(50,0,50,100);
-	line(90,10,10,90);
+	line(0, 50, 100, 50);
+	line(50, 0, 50, 100);
+	line(90, 10, 10, 90);
 	```
 
 1. Processing will execute one line of code at a time, starting at the top of the sketch and working downward. This is called **procedural programming**. Try calling the `line` function a few different times with a few different values in a single sketch.
@@ -53,7 +53,7 @@ Of course, you can do a lot with lines, but Processing can draw a lot of differe
 1. Enter the following code in a blank sketch and press run:
 
 	```java
-	ellipse(50,15,30,30);
+	ellipse(50, 15, 30, 30);
 	```
 
 	The [ellipse function](https://processing.org/reference/ellipse_.html) draws an ellipse (oval). An ellipse with equal width and height is more commonly known as a circle. The syntax for the ellipse function is:
@@ -67,8 +67,8 @@ Of course, you can do a lot with lines, but Processing can draw a lot of differe
 
 
 	```java
-	ellipse(50,15,30,30);
-	line(50,30,50,70);
+	ellipse(50, 15, 30, 30);
+	line(50, 30, 50, 70);
 	```
 
 1. Even though you can draw a rectangle using just four lines, there's a [rectangle function](https://processing.org/reference/rect_.html) to make it easer. Its syntax is:
@@ -80,12 +80,31 @@ Of course, you can do a lot with lines, but Processing can draw a lot of differe
 1. Try drawing a box around your stick figure. At this stage, it's important to note that as your code is executed, Processing draws shapes on top of previously-drawn shapes. Therefore, you may want to execute the `rect` function before the code to draw your stick figure.
 
 ## Add color
+You may have noticed that the ellipse and the rectangle you drew had black outlines and were filled with white. It would be super boring if that was the only option, right? In this section, you'll learn how to change the **stroke** (the outline) and the **fill** (the solid color inside the shape).
 
+There are a lot of ways for us to describe colors to a computer. With processing, you'll ususally use an **RGB value**, which describes colors by stating how much red, green, and blue are in them. You can think of it like mixing paint.
 
+1. To try it out, run the following code to draw a circle with a red fill:
+
+	```java
+	fill(255, 0, 0);
+	ellipse(50, 50, 75, 75)
+	```
 
 ## Make things move
+Up until now, you've been writing sketches that draw a single thing and then they're done. But Processing is a powerful language that lets you create animations and interactivity. In this section, you'll create motion and listen to input from the mouse.
 
+In order to 
 
+	```java
+	void setup() {
+		// the code here will only be executed once.
+	}
+
+	void draw() {
+		// the code here will be executed over and over again.
+	}
+	```
 
 ## What next?
 
