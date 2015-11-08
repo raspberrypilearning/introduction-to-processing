@@ -16,6 +16,8 @@ The download and installation process might be a little different than you're us
 
 ## Write your first Processing sketch
 
+![](images/window.png)
+
 The main Processing window is where you'll type your code. The Run button is how you'll execute that code. In the world of Processing, the program you write is called a **sketch**. Create your first simple sketch:
 
 1. Enter the following code in the window:
@@ -25,6 +27,8 @@ The main Processing window is where you'll type your code. The Run button is how
 	```
 
 1. Click on the Run button. A new window should appear with a box and a diagonal line.
+
+	![](images/line.png)
 
 	The [line function](https://processing.org/reference/line_.html) draws a line between two points in the window. It takes four inputs: `x1`, and `y1` for the start of the line and `x2`, and `y2` for the end of the line. Its syntax is:
 
