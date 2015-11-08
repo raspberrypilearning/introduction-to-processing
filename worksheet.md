@@ -4,7 +4,7 @@ Processing is all about learning to use code to draw on screen. The language is 
 
 ## Downloading and installing Processing
 
-The download and installation process might be a litte different than you're used to, but please keep in mind this the Raspberry Pi implementation of Processing is brand new and it may take time for the process to become easier.
+The download and installation process might be a litte different than you're used to, but please keep in mind this the Raspberry Pi implementation of Processing is brand new and it may take time for the process to become more streamlined.
 
 1. Open the termminal window and enter the following command at the prompt to download and install Processing onto your Raspberry Pi:
 
@@ -40,6 +40,35 @@ The main Processing window is where you'll type your code. The Run button is how
 	line(0,50,100,50);
 	line(50,0,50,100);
 	line(90,10,10,90);
+	```
+
+1. Processing will execute one line of code at a time, starting at the top of the sketch and working downward. This is called **procedural programming**. Try calling the `line` function a few different times with a few different values in a single sketch.
+
+1. When you click Run, you'll notice that Processing draws each line you entered on the window.
+
+## Draw other shapes
+
+Of course, you can do a lot with lines, but Processing can draw a lot of different shapes. In this step, you'll learn how to draw a circle and a rectangle.
+
+1. Enter the following code in a blank sketch and press run:
+
+	```java
+	ellipse(50,15,30,30);
+	```
+
+	The [ellipse function](https://processing.org/reference/ellipse_.html) draws an ellipse (oval). An ellipse with equal width and height is more commonly known as a circle. The syntax for the ellipse function is:
+
+	```java
+	ellipse(xPosition,yPosition,width,height);
+	```
+1. Try changing the values of the ellipse and running your sketch to see how each value affects the shape.
+
+1. If you go back to the original ellipse you drew, it looked like the start of a stick figure, don't you think? Try using the line function to draw the rest of the person. Here's a hint to get you started:
+
+
+	```java
+	ellipse(50,15,30,30);
+	line(50,30,50,70);
 	```
 
 ## What next?
