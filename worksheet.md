@@ -8,11 +8,11 @@ The download and installation process might be a litte different than you're use
 
 1. Open the termminal window and enter the following command at the prompt to download and install Processing onto your Raspberry Pi:
 
-    curl http://sukzessiv.net/~gohai/p5-arm/install-arm.sh | sudo sh
+	curl http://sukzessiv.net/~gohai/p5-arm/install-arm.sh | sudo sh
 
 1. When the installation is complete, enter the following the command to start the Processing IDE:
 
-    processing
+	processing
 
 ## Your first Processing sketch
 
