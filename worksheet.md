@@ -10,9 +10,9 @@ The download and installation process might be a little different than you're us
 
 		curl http://sukzessiv.net/~gohai/p5-arm/install-arm.sh | sudo sh
 
-1. When the installation is complete, enter the following the command to start the Processing development environment:
+1. When the installation is complete, click on Menu -> Programming -> Processing.
 
-		processing
+![](images/launch-processing.png)
 
 ## Write your first Processing sketch
 
@@ -218,7 +218,7 @@ There are many ways to have a Processing sketch listen to inputs and make your s
 
 1. Run the sketch and click anywhere in the window to see the circle move to that position!
 
-1. Try using mouseX and mouseY to change the size or color of a shape.
+1. Try updating the code to use `mouseX`, `mouseY`, and `mousePressed` to change the size or color of a shape.
 
 ## What next?
 
