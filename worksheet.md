@@ -133,27 +133,38 @@ void draw() {
 }
 ```
 
-1. Enter the following code into a new Processing sketch and run your sketch:
+1. Enter the following code into a new Processing sketch and run your sketch. The text after the double slashes are comments to help you understand what each line is doing. They'll be ignored by Processing.
 
 	```java
+	// Create an integer variable called i and store the value 0 in it:
 	int i = 0;
 
 	void setup() {
-	 size(500,500); 
+	  // Create a 500 pixel by 500 pixel window:
+	  size(500,500); 
 	}
 
 	void draw() {
+	  // Set the background to blue:
 	  background(0,0,100);
+
+	  // Set the fill to red:
 	  fill(255,0,0);
+
+	  // Draw a circle. Its y coordinate will be taken from the variable i:
 	  ellipse(250, i, 30, 30);
-	  if (i < height) {
-	    i++;
+
+	  // Update the variable i:
+	  if (i < height) { // if it's less than the height of the window:
+	    i++; // then add 1 to its value
 	  }
-	  else {
-	   i = 0; 
+	  else { // otherwise (if it's greater than or equal to the height of the window): 
+	   i = 0; // Set it back to zero.
 	  }
 	}
 	```
+
+	You should see a circle moving downward. When it gets to the bottom, it goes back up to the top again. It will look like this forever.
 
 
 ## What next?
