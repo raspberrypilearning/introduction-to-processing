@@ -16,28 +16,78 @@ Throughout this worksheet, you'll be using the GPIO header on the Raspberry Pi. 
 1. Enter the code below into a new sketch and run it:
 
 	```java
-	import processing.io.*;
-	boolean ledOn = false;
+	import processing.io.*; // use the GPIO library
+
+	// store the desired state of the LED in a variable
+	boolean ledOn = false; 
 
 	void setup() {
-	  GPIO.pinMode(17, GPIO.OUTPUT);
+	  // set pin 17 as an output:
+	  GPIO.pinMode(17, GPIO.OUTPUT);  
 	}
 
 	void draw() {
-	  if (ledOn == true) {
+	  if (ledOn == true) { // If the desired state is on, then:
+
+	  	// turn the LED on:
 	    GPIO.digitalWrite(17, GPIO.HIGH);
+
+	    // and set the background red:
 	    background(255, 0, 0);
 	  }
-	  else {
+
+	  else { // otherwise:
+
+	  	// turn the LED off:
 	    GPIO.digitalWrite(17, GPIO.LOW);
+
+	    // and set the background black:
 	    background(0,0,0);
 	  }
 	}
 
 	void mouseClicked() {
+	  // When the mouse is clicked, store the opposite of 
+	  // ledOn into ledOn, which toggles ledOn:
 	  ledOn = !ledOn;
 	}
 	```
+
+1. When you click in the window, the background will turn red and the LED will turn on. When you click again, they will both toggle back to their original state.
+
+1. Try something else.
+
+## React to a button
+
+1. Wire up a button to GPIO pin 4 as show below. If you need more guidance, follow this guide (LINK TK - physical computing guide).
+
+	![](images/button.png)
+
+1. Enter the code below into a new sketch and run it.
+
+	```java
+	import processing.io.*;
+
+	void setup() {
+	  // set pin 17 as an input:
+	  GPIO.pinMode(4, GPIO.INPUT);
+	}
+
+	void draw() {
+	  if (GPIO.digitalRead(RPI.PIN7) == GPIO.HIGH) { // if the pin is HIGH, the button isn't pressed
+	    
+	    // set the background to black:
+	    background(0,0,0);
+
+	  } else { // if the button is pressed:
+
+	  	set the background to red:
+	    background(255,0,0);
+	  }
+	}
+	```
+
+1. When you press and hold the button down, the background of the sketch window will turn red. When you let go, it will go back to black.
 
 ## What next?
 - Try using code to create a piece of animated artwork.
