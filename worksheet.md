@@ -71,7 +71,7 @@ Of course, you can do a lot with lines, but Processing can draw a lot of differe
 
 	![](images/stick-figure.png)
 
-1. Even though you can draw a rectangle using just four lines, there's a [rectangle function](https://processing.org/reference/rect_.html) to make it easer. Its syntax is:
+1. Even though you can draw a rectangle using just four lines, there's a [rectangle function](https://processing.org/reference/rect_.html) to make it easier. Its syntax is:
 
 	```java
 	rect(xPosition, yPosition, width, height);
