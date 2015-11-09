@@ -55,7 +55,7 @@ Throughout this worksheet, you'll be using the GPIO header on the Raspberry Pi. 
 
 1. When you click in the window, the background will turn red and the LED will turn on. When you click again, they will both toggle back to their original state.
 
-1. Try something else.
+1. Try wiring up more LEDs and see if you can control them independently by clicking on different parts of your sketch window.
 
 ## React to a button
 
@@ -81,13 +81,15 @@ Throughout this worksheet, you'll be using the GPIO header on the Raspberry Pi. 
 
 	  } else { // if the button is pressed:
 
-	  	set the background to red:
+	  	// set the background to red:
 	    background(255,0,0);
 	  }
 	}
 	```
 
 1. When you press and hold the button down, the background of the sketch window will turn red. When you let go, it will go back to black.
+
+1. Try wiring up a few more buttons to control the motion or color of a few different shapes.
 
 ## What next?
 - Try using code to create a piece of animated artwork.
