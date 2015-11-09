@@ -13,7 +13,31 @@ Throughout this worksheet, you'll be using the GPIO header on the Raspberry Pi. 
 
 	![](images/led-gpio17.png)
 
+1. Enter the code below into a new sketch and run it:
 
+	```java
+	import processing.io.*;
+	boolean ledOn = false;
+
+	void setup() {
+	  GPIO.pinMode(17, GPIO.OUTPUT);
+	}
+
+	void draw() {
+	  if (ledOn == true) {
+	    GPIO.digitalWrite(17, GPIO.HIGH);
+	    background(255, 0, 0);
+	  }
+	  else {
+	    GPIO.digitalWrite(17, GPIO.LOW);
+	    background(0,0,0);
+	  }
+	}
+
+	void mouseClicked() {
+	  ledOn = !ledOn;
+	}
+	```
 
 ## What next?
 - Try using code to create a piece of animated artwork.
