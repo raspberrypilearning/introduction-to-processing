@@ -16,9 +16,9 @@ The download and installation process might be a little different than you're us
 
 ## Write your first Processing sketch
 
-![](images/window.png)
-
 The main Processing window is where you'll type your code. The **Run** button is how you'll execute that code. In the world of Processing, the program you write is called a **sketch**. Create your first simple sketch:
+
+![](images/window.png)
 
 1. Enter the following code in the window:
 
