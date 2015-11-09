@@ -1,15 +1,16 @@
-# Taking Processing Further with Physical Computing
+# Taking Processing further with physical computing
 
-Processing is so awesome that there are too many features to mention in just one tutorial! If you feel like you have got to grips with the [first page](worksheet.md), and you would like learn how to use Processing for physical computing, then follow the steps below.
+Processing is so awesome that there are too many features to mention in just one tutorial! If you feel like you've got to grips with the [first page](worksheet.md), and you would like learn how to use Processing for physical computing, then follow the steps below.
 
-This worksheet will show the basics of input and output with Processing. To get a deeper understanding of what you can do with physical computing, check out the Physical Computing guide.
+This worksheet will show the basics of input and output with Processing. To get a deeper understanding of what you can do with physical computing, check out the [physical computing guide](https://github.com/raspberrypilearning/physical-computing-guide).
 
 ## Control an LED
+
 Throughout this worksheet, you'll be using the GPIO header on the Raspberry Pi. Only the numbered pins below may be used as inputs and outputs.
 
 ![](images/gpio-numbers-pi2.png)
 
-1. Wire up an LED and a 330 ohm resistor to GPIO pin 17 as shown below. If you need more guidance, follow this guide (LINK TK - physical computing guide).
+1. Wire up an LED and a 330 ohm resistor to GPIO pin 17, as shown below. If you need more guidance, follow [this guide] (https://github.com/raspberrypilearning/physical-computing-guide).
 
 	![](images/led-gpio17.png)
 
@@ -59,7 +60,7 @@ Throughout this worksheet, you'll be using the GPIO header on the Raspberry Pi. 
 
 ## React to a button
 
-1. Wire up a button to GPIO pin 4 as show below. If you need more guidance, follow this guide (LINK TK - physical computing guide).
+1. Wire up a button to GPIO pin 4, as shown below. If you need more guidance, follow [this guide] (https://github.com/raspberrypilearning/physical-computing-guide).
 
 	![](images/button.png)
 
@@ -89,9 +90,10 @@ Throughout this worksheet, you'll be using the GPIO header on the Raspberry Pi. 
 
 1. When you press and hold the button down, the background of the sketch window will turn red. When you let go, it will go back to black.
 
-1. Try wiring up a few more buttons to control the motion or color of a few different shapes.
+1. Try wiring up a few more buttons to control the motion or colour of a few different shapes.
 
 ## What next?
+
 - Try using code to create a piece of animated artwork.
 - Do you have any other electronic components to wire up and use with Processing?
 - Why not take a look at the [Exhibition section of Processing.org](https://processing.org/exhibition/) and get inspired for your next project?
