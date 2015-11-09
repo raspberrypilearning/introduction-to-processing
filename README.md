@@ -20,14 +20,14 @@ The following hardware is required to work through [the second worksheet](worksh
 
 ## Worksheet
 
-You will need the following worksheet to get started:
+You will need the following worksheets to get started:
 
 - [The worksheet](worksheet.md)
 - [The second worksheet](worksheet-2.md)
 
 ## Learn more
 
-These worksheets are just a starting point. To learn more browse the [selection of tutorials on Processing.org](https://processing.org/tutorials/).
+These worksheets are just a starting point. To learn more, browse the [selection of tutorials on Processing.org](https://processing.org/tutorials/).
 
 ## Licence
 
@@ -37,3 +37,4 @@ Unless otherwise specified, everything in this repository is covered by the foll
 
 ***Introduction to Processing*** by the [Raspberry Pi Foundation](http://www.raspberrypi.org) is licensed under a [Creative Commons Attribution 4.0 International Licence](http://creativecommons.org/licenses/by-sa/4.0/).
 
+Based on a work at https://github.com/raspberrypilearning/introduction-to-processing
