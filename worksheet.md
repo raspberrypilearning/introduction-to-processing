@@ -10,7 +10,7 @@ The download and installation process might be a little different than you're us
 
 		curl http://sukzessiv.net/~gohai/p5-arm/install-arm.sh | sudo sh
 
-1. When the installation is complete, click on Menu -> Programming -> Processing.
+1. When the installation is complete, click on **Menu** -> **Programming** -> **Processing**.
 
 ![](images/launch-processing.png)
 
@@ -18,7 +18,7 @@ The download and installation process might be a little different than you're us
 
 ![](images/window.png)
 
-The main Processing window is where you'll type your code. The Run button is how you'll execute that code. In the world of Processing, the program you write is called a **sketch**. Create your first simple sketch:
+The main Processing window is where you'll type your code. The **Run** button is how you'll execute that code. In the world of Processing, the program you write is called a **sketch**. Create your first simple sketch:
 
 1. Enter the following code in the window:
 
@@ -26,7 +26,7 @@ The main Processing window is where you'll type your code. The Run button is how
 	line(0, 0, 100, 100);
 	```
 
-1. Click on the Run button. A new window should appear with a box and a diagonal line.
+1. Click on the **Run** button. A new window should appear with a box and a diagonal line.
 
 	![](images/line.png)
 
@@ -36,12 +36,12 @@ The main Processing window is where you'll type your code. The Run button is how
 	line(x1, y1, x2, y2);
 	```
 
-	To understand what this means, you'll need to know that Processing uses a coordinate system like the one shown below; crucially the numbering begins at 0, not 1. Also, the origin is in the top left rather than the bottom left as you may be used to.
+	To understand what this means, you'll need to know that Processing uses a coordinate system like the one shown below. Not that the numbering begins at 0, not 1. Also, the origin is in the top left rather than the bottom left as you may be used to.
 
 	![](images/coordinates.png)
 
 
-1. Try entering different values into the line function and press play. Below are a few ideas to try. Can you guess what the output will look like _before_ you execute the code?
+1. Try entering different values into the line function and press **Run**. Below are a few ideas to try. Can you guess what the output will look like _before_ you execute the code?
 
 	```java
 	line(0, 50, 100, 50);
@@ -51,13 +51,13 @@ The main Processing window is where you'll type your code. The Run button is how
 
 1. Processing will execute one line of code at a time, starting at the top of the sketch and working downward. This is called **procedural programming**. Try calling the `line` function a few different times with a few different values in a single sketch.
 
-1. When you click Run, you'll notice that Processing draws each line you entered on the window.
+1. When you click **Run**, you'll notice that Processing draws each line you entered on the window.
 
 ## Draw other shapes
 
 Of course, you can do a lot with lines, but Processing can draw a lot of different shapes. In these steps, you'll learn how to draw a circle and a rectangle.
 
-1. Enter the following code in a blank sketch and press run:
+1. Enter the following code in a blank sketch and press **Run**:
 
 	```java
 	ellipse(50, 15, 30, 30);
@@ -107,7 +107,7 @@ There are a lot of ways for us to describe colors to a computer. With processing
 	```java
 	fill(red, green, blue);
 	```
-	Each color can have the value 0 to 255.
+	Each primary color can have the value 0 to 255. 0 means no presense of the color and 255 is the maximum amount of that color.
 
 1. Try to change the values of the fill function and re-run your code to try making other colors. Remember, you may need to mix colors together!
 
@@ -134,7 +134,7 @@ There are a lot of ways for us to describe colors to a computer. With processing
 ## Make things move
 Up until now, you've been writing sketches that draw a single thing and then they're done. But Processing is a powerful language that lets you create animations and respond to inputs. In this section, you'll learn how to get things to move on screen.
 
-In order to create movement, you'll need to define two special functions, `setup` and `draw`. The code you write in the `setup` function is only executed once when your sketch starts. The code you write in the `draw` function is executed over and over again until you terminate the sketch. This is the basic structure:
+In order to create movement, you'll need to define two special functions, `setup` and `draw`. The code you write in the `setup` function is only executed once when your sketch starts. Afterwards, the code you write in the `draw` function is executed over and over again until you terminate the sketch. This is the basic structure of most of the Processing sketches you'll write:
 
 ```java
 void setup() {
@@ -177,24 +177,26 @@ void draw() {
 	}
 	```
 
-	You should see a circle moving downward. When it gets to the bottom, it goes back up to the top again. It will look like this forever.
+	You should see a circle moving downward. When it gets to the bottom, it resets to the top again. It will move like this forever.
 
 	There are a few new concepts in this sketch. Let's take a closer look now at what's going on.
 
-	The line `int i = 0` sets up a **variable**, which is a spot in memory to hold an **integer**, which is a whole number. It calls that spot in memory `i` and sets its value to 0. Later in the Sketch, your code will read that value and even update it.
+	The line `int i = 0` sets up a **variable**, which is a spot in memory to hold an **integer**, which is a whole number. It calls that spot in memory `i` and sets its value to 0. Later in the Sketch, your code will read that value and update it.
 
 	When Processing draws the ellipse in the line `ellipse(250, i, 30, 30);`, it uses the current value of `i` as the y coordinate for the circle.
 
 	![](images/moving-circle.png)
 
-1. Further down, the line `i = i + 1` sets a new value for `i`, incrementing it by 1. Try changing that line to `i = i + 2`. What do you think will happen when you run the sketch? Try `i = i + 5`.
+1. Further down, the line `i = i + 1` sets a new value for `i`, incrementing it by 1. Try changing that line to `i = i + 2`. What do you think will happen when you run the sketch? Also try `i = i + 5`.
 
-1. The line that changes the value of `i` is wrapped up in an **if/else statement**. It checks to see if the value of `i` is greater than the height. If it is, it sets the value back to zero. This ensures that the circle goes back to the top of the window after it has moved to the bottom. Try adjusting if/else statement and the line that updates the value of `i` to make the ball move upward repeatedly.
+1. The line that changes the value of `i` is wrapped up in an **if/else statement**. It checks to see if the value of `i` is greater than the height of the window. If it is, it sets the value back to zero. This ensures that the circle goes back to the top of the window after it has moved to the bottom. Try adjusting if/else statement and the line that updates the value of `i` to make the ball move upward repeatedly.
 
-1. The line `background(0,0,100)` fills the window with blue. The [background function](https://processing.org/reference/background_.html) takes red, green, and blue parameters just like other functions that deal with color. It's important to call this function at the start of every draw block if you want previously drawn circles cleared from the window. Try running the sketch without the background function to see the effect.
+1. The line `background(0,0,100)` fills the window with blue. The [background function](https://processing.org/reference/background_.html) takes red, green, and blue parameters just like other functions that deal with color. It's important to call this function at the start of every draw block if you want the previously drawn circles cleared from the window. Try running the sketch without the background function to see the effect.
+
+1. Try to work with variables and other parameters such as x position, color, height, and width.
 
 ## Respond to the mouse
-There are many ways to have a Processing sketch listen to inputs and make your sketch interactive. The mouse is just one way. In this section, you'll learn how to listen for mouse clicks and get the position of the mouse.
+There are many ways to have a Processing sketch listen to inputs to make it interactive. The mouse is just one way. In this section, you'll learn how to listen for mouse clicks and get the position of the mouse.
 
 1. Create a new sketch with the following code:
 
@@ -228,6 +230,8 @@ There are many ways to have a Processing sketch listen to inputs and make your s
 	```
 
 	The code above uses a few special variables that all Processing sketches have "built-in": `height`, `width`, `mouseX`, and `mouseY`. The `height` and `width` variables refer to the height and width of the window. The `mouseX` and `mouseY` variables contain the position of the mouse pointer.
+	
+	_Note: You also used the `height` variable in the previous sketch to check the position of the circle in relation to the bottom of the window._
 
 	The code also creates a special function called `mousePressed()` that is executed when either mouse button is pressed. 
 
@@ -241,6 +245,6 @@ There are many ways to have a Processing sketch listen to inputs and make your s
 
 These are just the very basics of drawing on screen using code. There are many more functions to try. You can see a listing of them in the [Reference section of Processing.org](https://processing.org/reference/).
 
-We also recommend that you explore the example code that's included with Processing. Click File -> Examples to open the example browser.
+We also recommend that you explore the example code that's included with Processing. Click **File** -> **Examples** to open the example browser.
 
 Processing for Raspberry Pi has been enhanced to use the Pi's GPIO pins. If you're interested in adding some physical interactivity to your project, then move onto [the next tutorial here](worksheet-2.md)
