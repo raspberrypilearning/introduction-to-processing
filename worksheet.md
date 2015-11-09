@@ -4,8 +4,6 @@ Processing is all about learning to use code to draw on screen. The language is 
 
 ## Download and install Processing
 
-The download and installation process might be a little different than you're used to, but please keep in mind this the Raspberry Pi implementation of Processing is brand new and it may take time for the process to become more streamlined.
-
 1. Open the terminal window and enter the following command at the prompt to download and install Processing onto your Raspberry Pi:
 
 		curl http://sukzessiv.net/~gohai/p5-arm/install-arm.sh | sudo sh
