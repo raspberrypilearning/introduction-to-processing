@@ -1,6 +1,6 @@
 # Taking Processing further with physical computing
 
-Processing is so awesome that there are too many features to mention in just one tutorial! If you feel like you've got to grips with the [first page](worksheet.md), and you would like learn how to use Processing for physical computing, then follow the steps below.
+Processing is so awesome that there are too many features to mention in just one tutorial! If you feel like you've got to grips with the [first page](worksheet.md), and you would like learn how to use [Processing for physical computing](https://www.processing.org/reference/libraries/io/index.html), then follow the steps below.
 
 This worksheet will show the basics of input and output with Processing. To get a deeper understanding of what you can do with physical computing, check out the [physical computing guide](https://github.com/raspberrypilearning/physical-computing-guide).
 
@@ -94,6 +94,7 @@ Throughout this worksheet, you'll be using the GPIO header on the Raspberry Pi. 
 
 ## What next?
 
+- Learn more about the [Processing Hardware I/O library here](https://www.processing.org/reference/libraries/io/index.html).
 - Try using code to create a piece of animated artwork.
 - Do you have any other electronic components to wire up and use with Processing?
 - Why not take a look at the [Exhibition section](https://processing.org/exhibition/) of Processing.org and get inspired for your next project?

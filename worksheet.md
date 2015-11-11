@@ -44,6 +44,8 @@ The main Processing window is where you'll type your code, and the **Run** butto
 
 1. When you click **Run**, you'll notice that Processing draws each line you entered on the window.
 
+	_Note: Processing will alert you to mistakes or when it can't make sense of a statement because of a syntax error. It will highlight the line and print out helpful information in the Message area and Console at the bottom of the window._
+
 ## Draw other shapes
 
 Of course, you can do a lot with lines, but Processing can draw a lot of different shapes. In these steps, you'll learn how to draw a circle and a rectangle.
@@ -78,6 +80,8 @@ Of course, you can do a lot with lines, but Processing can draw a lot of differe
 	```
 
 1. Try drawing a box around your stick figure. At this stage, it's important to note that as your code is executed, Processing draws shapes on top of previously drawn shapes. Therefore, you may want to execute the `rect` function before the code to draw your stick figure.
+
+	_Note: If you ever forget how to use a function, you can always right-click on it in your code and click on "Find in Reference." This will open up a local copy of the Processing reference for that function._
 
 ## Add colour
 
@@ -166,7 +170,7 @@ void draw() {
 	    i = i + 1; // then add 1 to its value
 	  }
 	  else { // otherwise (if it's greater than or equal to the height of the window): 
-	   i = 0; // set it back to zero.
+	    i = 0; // set it back to zero.
 	  }
 	}
 	```
