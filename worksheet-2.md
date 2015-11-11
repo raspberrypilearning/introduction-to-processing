@@ -70,7 +70,7 @@ Throughout this worksheet, you'll be using the GPIO header on the Raspberry Pi. 
 	import processing.io.*;
 
 	void setup() {
-	  // set pin 17 as an input:
+	  // set pin 4 as an input:
 	  GPIO.pinMode(4, GPIO.INPUT);
 	}
 
