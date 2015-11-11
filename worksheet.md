@@ -89,7 +89,7 @@ There are lots of ways for us to describe colours to a computer. With Processing
 
 	```java
 	fill(255, 0, 0);
-	ellipse(50, 50, 75, 75)
+	ellipse(50, 50, 75, 75);
 	```
 
 	![](images/red-circle.png)
@@ -148,15 +148,15 @@ void draw() {
 
 	void setup() {
 	  // Create a 500 pixel by 500 pixel window:
-	  size(500,500); 
+	  size(500, 500); 
 	}
 
 	void draw() {
 	  // Set the background to blue:
-	  background(0,0,100);
+	  background(0, 0, 100);
 
 	  // Set the fill to red:
-	  fill(255,0,0);
+	  fill(255, 0, 0);
 
 	  // Draw a circle. Its y coordinate will be taken from the variable i:
 	  ellipse(250, i, 30, 30);
@@ -175,17 +175,17 @@ void draw() {
 
 	There are a few new concepts in this sketch. Let's take a closer look now at what's going on.
 
-	The line `int i = 0` sets up a **variable**; this is a spot in memory to hold an **integer**, which is a whole number. It calls that spot in memory `i` and sets its value to 0. Later in the sketch, your code will read that value and update it.
+	The line `int i = 0;` sets up a **variable**; this is a spot in memory to hold an **integer**, which is a whole number. It calls that spot in memory `i` and sets its value to 0. Later in the sketch, your code will read that value and update it.
 
 	When Processing draws the ellipse in the line `ellipse(250, i, 30, 30);`, it uses the current value of `i` as the y coordinate for the circle.
 
 	![](images/moving-circle.png)
 
-1. Further down, the line `i = i + 1` sets a new value for `i`, incrementing it by 1. Try changing that line to `i = i + 2`. What do you think will happen when you run the sketch? Also try `i = i + 5`.
+1. Further down, the line `i = i + 1;` sets a new value for `i`, incrementing it by 1. Try changing that line to `i = i + 2;`. What do you think will happen when you run the sketch? Also try `i = i + 5;`.
 
 1. The line that changes the value of `i` is wrapped up in an **if/else statement**. It checks to see if the value of `i` is greater than the height of the window. If it is, it sets the value back to zero. This ensures that the circle goes back to the top of the window after it has moved to the bottom. Try adjusting the `if/else` statement and the line that updates the value of `i`, to make the ball move upwards repeatedly.
 
-1. The line `background(0,0,100)` fills the window with blue. The [background function](https://processing.org/reference/background_.html) takes red, green, and blue parameters, just like other functions that deal with colour. It's important to call this function at the start of every draw block if you want the previously drawn circles cleared from the window. Try running the sketch without the background function to see the effect.
+1. The line `background(0, 0, 100);` fills the window with blue. The [background function](https://processing.org/reference/background_.html) takes red, green, and blue parameters, just like other functions that deal with colour. It's important to call this function at the start of every draw block if you want the previously drawn circles cleared from the window. Try running the sketch without the background function to see the effect.
 
 1. Try to work with variables and other parameters such as x position, colour, height, and width.
 
@@ -200,7 +200,7 @@ There are many ways to have a Processing sketch listen to inputs to make it inte
 	int y = 0;
 
 	void setup() {
-	 size(500,500);
+	 size(500, 500);
 
 	 // Set the value of x to be half the width of the window
 	 x = width / 2;
@@ -210,7 +210,7 @@ There are many ways to have a Processing sketch listen to inputs to make it inte
 	}
 
 	void draw () {
-	 background(0,100,0);
+	 background(0, 100, 0);
 
 	 // Draw the circle in the position taken from the x and y variables:
 	 ellipse(x, y, 50, 50);

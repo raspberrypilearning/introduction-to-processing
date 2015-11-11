@@ -43,7 +43,7 @@ Throughout this worksheet, you'll be using the GPIO header on the Raspberry Pi. 
 	    GPIO.digitalWrite(17, GPIO.LOW);
 
 	    // and set the background black:
-	    background(0,0,0);
+	    background(0, 0, 0);
 	  }
 	}
 
@@ -75,15 +75,15 @@ Throughout this worksheet, you'll be using the GPIO header on the Raspberry Pi. 
 	}
 
 	void draw() {
-	  if (GPIO.digitalRead(RPI.PIN7) == GPIO.HIGH) { // if the pin is HIGH, the button isn't pressed
+	  if (GPIO.digitalRead(4) == GPIO.HIGH) { // if the pin is HIGH, the button isn't pressed
 	    
 	    // set the background to black:
-	    background(0,0,0);
+	    background(0, 0, 0);
 
 	  } else { // if the button is pressed:
 
 	  	// set the background to red:
-	    background(255,0,0);
+	    background(255, 0, 0);
 	  }
 	}
 	```
