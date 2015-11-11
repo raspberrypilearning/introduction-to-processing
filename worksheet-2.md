@@ -10,7 +10,7 @@ Throughout this worksheet, you'll be using the GPIO header on the Raspberry Pi. 
 
 ![](images/gpio-numbers-pi2.png)
 
-1. Wire up an LED and a 330 ohm resistor to GPIO pin 17, as shown below. If you need more guidance, follow [this guide] (https://github.com/raspberrypilearning/physical-computing-guide).
+1. Wire up an LED and a 330 ohm resistor to GPIO pin 17, as shown below. If you need more guidance, follow [this guide](https://github.com/raspberrypilearning/physical-computing-guide).
 
 	![](images/led-gpio17.png)
 
