@@ -32,7 +32,7 @@ The main Processing window is where you'll type your code, and the **Run** butto
 
 	![](images/coordinates.png)
 
-1. Try entering different values into the `line` function and press **Run**. Below are a few ideas to try. Can you guess what the output will look like _before_ you execute the code?
+1. Try entering different values into the `line` function and press **Run**. Below are a few ideas to try. Can you guess what the output will look like *before* you execute the code?
 
 	```java
 	line(0, 50, 100, 50);
@@ -44,7 +44,7 @@ The main Processing window is where you'll type your code, and the **Run** butto
 
 1. When you click **Run**, you'll notice that Processing draws each line you entered on the window.
 
-	_Note: Processing will alert you to mistakes or when it can't make sense of a statement because of a syntax error. It will highlight the line and print out helpful information in the Message area and Console at the bottom of the window._
+	*Note: Processing will alert you to mistakes or when it can't make sense of a statement because of a syntax error. It will highlight the line and print out helpful information in the Message area and Console at the bottom of the window.*
 
 ## Draw other shapes
 
@@ -81,7 +81,7 @@ Of course, you can do a lot with lines, but Processing can draw a lot of differe
 
 1. Try drawing a box around your stick figure. At this stage, it's important to note that as your code is executed, Processing draws shapes on top of previously drawn shapes. Therefore, you may want to execute the `rect` function before the code to draw your stick figure.
 
-	_Note: If you ever forget how to use a function, you can always right-click on it in your code and click on "Find in Reference." This will open up a local copy of the Processing reference for that function._
+	*Note: If you ever forget how to use a function, you can always right-click on it in your code and click on "Find in Reference." This will open up a local copy of the Processing reference for that function.*
 
 ## Add colour
 
@@ -122,7 +122,7 @@ There are lots of ways for us to describe colours to a computer. With Processing
 
 1. Use what you now know about `fill`, `stroke`, `noFill`, and `noStroke` to draw something like the Olympic rings, a giraffe, or a Raspberry Pi!
 
-	_Note: By default, all lines are 1 pixel wide. To increase the thickness of the line, use the [strokeWeight function](https://processing.org/reference/strokeWeight\_.html). As with the colour functions, after you call it, all shapes you draw will have your specified thickness until `noStroke` is called, or `strokeWeight` is called with a different value. The syntax is:_
+	*Note: By default, all lines are 1 pixel wide. To increase the thickness of the line, use the [strokeWeight function](https://processing.org/reference/strokeWeight_.html). As with the colour functions, after you call it, all shapes you draw will have your specified thickness until `noStroke` is called, or `strokeWeight` is called with a different value. The syntax is:*
 
 	```java
 	strokeWeight(width);
@@ -230,7 +230,7 @@ There are many ways to have a Processing sketch listen to inputs to make it inte
 
 	The code above uses a few special variables that all Processing sketches have "built-in": `height`, `width`, `mouseX`, and `mouseY`. The `height` and `width` variables refer to the height and width of the window. The `mouseX` and `mouseY` variables contain the position of the mouse pointer.
 	
-	_Note: You also used the `height` variable in the previous sketch, to check the position of the circle in relation to the bottom of the window._
+	*Note: You also used the `height` variable in the previous sketch, to check the position of the circle in relation to the bottom of the window.*
 
 	The code also creates a special function called `mousePressed()` that is executed when either mouse button is pressed. 
 
