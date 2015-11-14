@@ -2,7 +2,7 @@
 
 Processing is so awesome that there are too many features to mention in just one tutorial! If you feel like you've got to grips with the [first page](worksheet.md), and you would like learn how to use [Processing for physical computing](https://www.processing.org/reference/libraries/io/index.html), then follow the steps below.
 
-This worksheet will show the basics of input and output with Processing. To get a deeper understanding of what you can do with physical computing, check out the [physical computing guide](https://github.com/raspberrypilearning/physical-computing-guide).
+This worksheet will show the basics of input and output with Processing. To get a deeper understanding of what you can do with physical computing, check out the [physical computing guide](https://www.raspberrypi.org/learning/physical-computing-guide).
 
 ## Control an LED
 
@@ -10,7 +10,7 @@ Throughout this worksheet, you'll be using the GPIO header on the Raspberry Pi. 
 
 ![](images/gpio-numbers-pi2.png)
 
-1. Wire up an LED and a 330 ohm resistor to GPIO pin 17, as shown below. If you need more guidance, follow [this guide](https://github.com/raspberrypilearning/physical-computing-guide).
+1. Wire up an LED and a 330 ohm resistor to GPIO pin 17, as shown below. If you need more guidance, follow [this guide](https://www.raspberrypi.org/learning/physical-computing-guide).
 
 	![](images/led-gpio17.png)
 
@@ -60,7 +60,7 @@ Throughout this worksheet, you'll be using the GPIO header on the Raspberry Pi. 
 
 ## React to a button
 
-1. Wire up a button to GPIO pin 4, as shown below. If you need more guidance, follow [this guide] (https://github.com/raspberrypilearning/physical-computing-guide).
+1. Wire up a button to GPIO pin 4, as shown below. If you need more guidance, follow [this guide](https://www.raspberrypi.org/learning/physical-computing-guide).
 
 	![](images/button.png)
 
