@@ -232,7 +232,7 @@ There are many ways to have a Processing sketch listen to inputs to make it inte
 	
 	*Note: You also used the `height` variable in the previous sketch, to check the position of the circle in relation to the bottom of the window.*
 
-	The code also creates a special function called `mousePressed()` that is executed when either mouse button is pressed. 
+	The code also creates a special function called `mousePressed()` that is executed when either mouse button is pressed. This is an example of **Event-driven programming**.
 
 1. Run the sketch and click anywhere in the window to see the circle move to that position!
 
