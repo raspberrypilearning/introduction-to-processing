@@ -1,0 +1,29 @@
+---
+title: Introduction to Processing
+hero_image: images/banner.png
+description: Learn how to create graphics with code in Processing
+original_url: https://raspberrypi.org/learning/introduction-to-processing
+theme: red
+duration: 2
+listed: false
+ingredient: false
+copyedit: true
+curriculum: creator, design-0, programming-0, phys-comp-0, manufacture-0, community-0
+interests: ''
+technologies: rpi, physical computing, python
+site_areas: ''
+steps:
+- title: Introduction
+- title: What you will need
+- title: Taking Processing further with physical computing
+- title: Control an LED
+- title: React to a button
+- title: What next?
+- title: Introduction
+- title: Write your first Processing sketch
+- title: Draw other shapes
+- title: Add colour
+- title: Make things move
+- title: Respond to the mouse
+- title: What next?
+
