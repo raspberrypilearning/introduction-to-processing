@@ -18,8 +18,7 @@ steps:
 - title: Taking Processing further with physical computing
 - title: Control an LED
 - title: React to a button
-- title: What next?
-- title: Introduction
+- title: Drawing
 - title: Write your first Processing sketch
 - title: Draw other shapes
 - title: Add colour
