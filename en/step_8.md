@@ -1,37 +1,51 @@
-## Draw other shapes
+Processing can also be used for physical computing.
 
-Of course, you can do a lot with lines, but Processing can draw a lot of different shapes. In these steps, you'll learn how to draw a circle and a rectangle.
+## Controlling an LED
 
-- Enter the following code in a blank sketch and press **Run**:
+- Wire up an LED and a 330 ohm resistor to GPIO pin 17
 
-	```java
-	ellipse(50, 15, 30, 30);
-	```
+[[[rpi-physical-connect-led]]]
 
-	The [ellipse function](https://processing.org/reference/ellipse_.html) draws an ellipse (oval). An ellipse with equal width and height is more commonly known as a circle. The syntax for the `ellipse` function is:
+- Enter the code below into a new sketch and run it:
 
 	```java
-	ellipse(xPosition, yPosition, width, height);
+	import processing.io.*; // use the GPIO library
+
+	// store the desired state of the LED in a variable
+	boolean ledOn = false;
+
+	void setup() {
+	  // set pin 17 as an output:
+	  GPIO.pinMode(17, GPIO.OUTPUT);  
+	}
+
+	void draw() {
+	  if (ledOn == true) { // If the desired state is on, then:
+
+	  	// turn the LED on:
+	    GPIO.digitalWrite(17, GPIO.HIGH);
+
+	    // and set the background red:
+	    background(255, 0, 0);
+	  }
+
+	  else { // otherwise:
+
+	  	// turn the LED off:
+	    GPIO.digitalWrite(17, GPIO.LOW);
+
+	    // and set the background black:
+	    background(0, 0, 0);
+	  }
+	}
+
+	void mouseClicked() {
+	  // When the mouse is clicked, store the opposite of
+	  // ledOn into ledOn, which toggles ledOn:
+	  ledOn = !ledOn;
+	}
 	```
-	
-- Try changing the values of the ellipse and running your sketch, to see how each value affects the shape.
 
-- If you go back to the original ellipse you drew, it looked like the start of a stick figure, don't you think? Try using the `line` function to draw the rest of the person. Here's a hint to get you started:
+- When you click in the window, the background will turn red and the LED will turn on. When you click again, they will both toggle back to their original state.
 
-	```java
-	ellipse(50, 15, 30, 30);
-	line(50, 30, 50, 70);
-	```
-
-	![](images/stick-figure.png)
-
-- Even though you can draw a rectangle using just four lines, there's a [rectangle function](https://processing.org/reference/rect_.html) to make it easier. Its syntax is:
-
-	```java
-	rect(xPosition, yPosition, width, height);
-	```
-
-- Try drawing a box around your stick figure. At this stage, it's important to note that as your code is executed, Processing draws shapes on top of previously drawn shapes. Therefore, you may want to execute the `rect` function before the code to draw your stick figure.
-
-	*Note: If you ever forget how to use a function, you can always right-click on it in your code and click on "Find in Reference." This will open up a local copy of the Processing reference for that function.*
-
+- Try wiring up more LEDs and see if you can control them independently by clicking on different parts of your sketch window.
