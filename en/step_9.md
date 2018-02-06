@@ -4,7 +4,6 @@
 
 [[[rpi-gpio-wiring-a-button]]]
 
-![](images/button.png)
 
 - Enter the code below into a new sketch and run it.
 
