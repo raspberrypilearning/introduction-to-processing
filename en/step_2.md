@@ -9,7 +9,7 @@
 * 4 x Male-to-female jumper leads
 
 ### Software
-To install processing, pen a terminal window and enter the following command at the prompt to download and install Processing onto your Raspberry Pi:
+To install processing, open a terminal window and enter the following command at the prompt:
 
 ```bash
 curl https://processing.org/download/install-arm.sh | sudo sh
