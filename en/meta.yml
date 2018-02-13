@@ -5,12 +5,12 @@ description: Learn how to create graphics with code in Processing
 original_url: https://raspberrypi.org/learning/introduction-to-processing
 theme: red
 duration: 2
-listed: false
+listed: true
 ingredient: false
-copyedit: false
-curriculum: creator, design-0, programming-0, phys-comp-0, manufacture-0, community-0
+copyedit: true
+curriculum: builder, design-0, programming-2, phys-comp-1, manufacture-0, community-0
 interests: ''
-technologies: physical computing
+technologies: physical computing, processing
 site_areas: ''
 steps:
 - title: Introduction
