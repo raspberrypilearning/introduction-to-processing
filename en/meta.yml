@@ -8,11 +8,15 @@ duration: 2
 listed: true
 ingredient: false
 copyedit: true
-curriculum: builder, design-0, programming-2, phys-comp-1, manufacture-0, community-0
+curriculum: 2, design-0, programming-2, phys-comp-1, manufacture-0, community-0
 interests: ''
-technologies: physical computing, processing
-site_areas: ''
-steps:
+technologies: electronic-components
+site_areas: projects
+hardware: electronic-components
+software: ''
+version: 3
+last_tested: 2017-01-01
+steps: 
 - title: Introduction
 - title: What you will need
 - title: Write your first Processing sketch
