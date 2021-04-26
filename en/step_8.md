@@ -15,7 +15,7 @@ Processing can also be used for physical computing.
 	boolean ledOn = false;
 
 	void setup() {
-	  // set pin 17 as an output:
+	  // set pin GPIO17 as an output:
 	  GPIO.pinMode(17, GPIO.OUTPUT);  
 	}
 
