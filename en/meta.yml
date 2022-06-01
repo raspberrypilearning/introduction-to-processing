@@ -16,14 +16,18 @@ hardware: electronic-components
 software: ''
 version: 3
 last_tested: 2017-01-01
-steps: 
+steps:
 - title: Introduction
 - title: What you will need
 - title: Write your first Processing sketch
 - title: Draw other shapes
+  completion:
+  - engaged
 - title: Add colour
 - title: Respond to the mouse
 - title: Make things move
 - title: Controlling an LED
 - title: React to a button
+  completion:
+  - internal
 - title: What next?
