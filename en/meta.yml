@@ -19,13 +19,15 @@ last_tested: 2017-01-01
 steps:
 - title: Introduction
 - title: What you will need
-  completion: engaged
 - title: Write your first Processing sketch
 - title: Draw other shapes
+  completion:
+  - engaged
 - title: Add colour
 - title: Respond to the mouse
 - title: Make things move
 - title: Controlling an LED
-  completion: internal
 - title: React to a button
+  completion:
+  - internal
 - title: What next?
